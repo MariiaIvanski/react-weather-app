@@ -1,15 +1,11 @@
 import "./App.css";
-import Weather from "./Weather.js";
+import WeatherSearch from "./WeatherSearch";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Weather Forecast</h1>
-        <Weather city="Hadera" />
-      </header>
+      <h1>Weather App</h1>
+      <WeatherSearch />
     </div>
   );
 }
-
-export default App;
