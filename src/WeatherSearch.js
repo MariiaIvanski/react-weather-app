@@ -29,9 +29,27 @@ export default function WeatherSearch() {
   }
 
   let form = (
-    <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="Type a city" onChange={changeCity} />
-      <input type="submit" value="Search" />
+    <form
+      className="d-flex flex-row bd-highlight mb-3 mt-3"
+      onSubmit={handleSubmit}
+    >
+      <div className="col-auto">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          className="form-control"
+          autoComplete="off"
+          onChange={changeCity}
+        />
+      </div>
+      <div className="col-auto">
+        <input type="submit" value="Search" class="btn btn-primary" />
+      </div>
+      <div className="col-auto">
+        <button type="button" className="btn btn-success mb-3">
+          Local ☂
+        </button>
+      </div>
     </form>
   );
 
@@ -39,6 +57,7 @@ export default function WeatherSearch() {
     return (
       <div>
         {form}
+        <h2>The weather in {city} is: </h2>
         <ul>
           <li>Temperature: {Math.round(weather.temperature)}°C</li>
           <li>Description: {weather.description}</li>
