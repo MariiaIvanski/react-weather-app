@@ -12,7 +12,7 @@ ReactDOM.render(
     <div className="footer">
       <small>
         <a
-          href="https://github.com/MariiaIvanski/vanilla-weather-app"
+          href="https://github.com/MariiaIvanski/react-weather-app"
           target="_blank"
           rel="noreferrer"
         >
