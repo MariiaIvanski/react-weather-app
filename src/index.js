@@ -9,6 +9,18 @@ ReactDOM.render(
     <div className="weather-app-wrapper">
       <App />
     </div>
+    <div className="footer">
+      <small>
+        <a
+          href="https://github.com/MariiaIvanski/vanilla-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>{" "}
+        by Mariia Ivanski
+      </small>
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );
